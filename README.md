@@ -20,10 +20,12 @@ DesignSystem can be installed using Swift Package Manager. Add the following to 
 DynamicColor is a struct that provides a way to create colors that adjust to the user's preferred appearance.
 
 ```swift
-let primary = DynamicColor(
-    light: .init(hex: "000000", alpha: 1.0),
-    dark: .init(hex: "FFFFFF", alpha: 1.0)
-)
+public extension DesignSystem.DynamicColor {
+     let textPrimary: Self = .init(
+         light: .init(hex: "000000", alpha: 1.0),
+         dark: .init(hex: "FFFFFF", alpha: 1.0)
+     )
+}
 ```
 
 ### Font
