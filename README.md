@@ -2,10 +2,10 @@
 
 DesignSystem is a Swift library that provides several utilities to standardize and streamline the design process of your app. It includes the following features:
 
-### DynamicColor ✅
+### DynamicColor
 A struct that provides support for dark and light mode, and can adjust its colors dynamically to match the user's preferred appearance.
 
-### Font ✅
+### Font
 A helper for registering external fonts and a struct for organizing your app's fonts.
 
 ### Extensions ⚙️
@@ -14,29 +14,11 @@ An extension for SwiftUI's Color that allows you to initialize a color with a he
 ### View Modifiers ⚙️
 In progress
 
-### Static values ✅
+### Static values
 Constants to standardize spacing between UI elements.
 
 ### Components ⚙️
-Buttons: customizable buttons in terms of color, size, and shape to perform specific actions in the app.
-
-Text fields: text fields for data entry, such as form filling and search.
-
-Navigation bar: a bar at the top of the screen that provides navigation options for the app.
-
-Tab bar: a bar at the bottom of the screen that allows the user to switch between different sections of the app.
-
-Alerts: notifications that appear on the screen to inform the user of important information or actions.
-
-Progress indicators: visual cues that show the progress of a task or process, such as loading animations.
-
-Cards: information or content displayed in a card-like format, which can be swiped or tapped for additional actions or information.
-
-Lists: a list of items or data displayed in a scrollable format.
-
-Pickers: a UI element that allows the user to select from a list of options, such as a date or time picker.
-
-Sliders: a UI element that allows the user to adjust a value, such as volume or brightness, by sliding a control back and forth.
+Buttons, Text fields, Navigation bar, Tab bar, Alerts, Progress indicators, Cards, Lists, Pickers, Sliders...
 
 ## Installation
 
