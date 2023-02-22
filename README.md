@@ -2,21 +2,21 @@
 
 DesignSystem is a Swift library that provides several utilities to standardize and streamline the design process of your app. It includes the following features:
 
-*DynamicColor*
+### DynamicColor
 A struct that provides support for dark and light mode, and can adjust its colors dynamically to match the user's preferred appearance.
 
-*Font*
+### Font
 A helper for registering external fonts and a struct for organizing your app's fonts.
 
-*Extensions* [IN PROGRESS]
+### Extensions [IN PROGRESS]
 1 - An extension for SwiftUI's Color that allows you to initialize a color with a hexadecimal value and an alpha value.
 
-*View Modifiers* [IN PROGRESS]
+### View Modifiers [IN PROGRESS]
 
-*Static values*
+### Static values
 Constants to standardize spacing between UI elements.
 
-*Components* [IN PROGRESS]
+### Components [IN PROGRESS]
 1 - Buttons: Standard buttons, ghost buttons, and other button variations.
 2 - Forms: Text inputs, checkboxes, radio buttons, switches, and other form elements.
 3 - Navigation: Navigation bars, tab bars, and other navigation-related elements.
