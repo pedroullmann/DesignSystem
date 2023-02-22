@@ -9,31 +9,34 @@ A struct that provides support for dark and light mode, and can adjust its color
 A helper for registering external fonts and a struct for organizing your app's fonts.
 
 ### Extensions ⚙️
-1 - An extension for SwiftUI's Color that allows you to initialize a color with a hexadecimal value and an alpha value.
+An extension for SwiftUI's Color that allows you to initialize a color with a hexadecimal value and an alpha value.
 
 ### View Modifiers ⚙️
+In progress
 
 ### Static values ✅
 Constants to standardize spacing between UI elements.
 
 ### Components ⚙️
-1 - Buttons: Standard buttons, ghost buttons, and other button variations.
+Buttons: customizable buttons in terms of color, size, and shape to perform specific actions in the app.
 
-2 - Forms: Text inputs, checkboxes, radio buttons, switches, and other form elements.
+Text fields: text fields for data entry, such as form filling and search.
 
-3 - Navigation: Navigation bars, tab bars, and other navigation-related elements.
+Navigation bar: a bar at the top of the screen that provides navigation options for the app.
 
-4 - Cards: Display components for content, such as images, text, and buttons.
+Tab bar: a bar at the bottom of the screen that allows the user to switch between different sections of the app.
 
-5 - Alerts: Pop-up alerts that notify users of important information.
+Alerts: notifications that appear on the screen to inform the user of important information or actions.
 
-6 - Modals: Overlay views that display content or require user input.
+Progress indicators: visual cues that show the progress of a task or process, such as loading animations.
 
-7 - Lists: Display components for lists of content, such as tables or scrollable lists.
+Cards: information or content displayed in a card-like format, which can be swiped or tapped for additional actions or information.
 
-8 - Menus: Drop-down menus, context menus, and other menu-related elements.
+Lists: a list of items or data displayed in a scrollable format.
 
-9 - Toasts: Pop-up
+Pickers: a UI element that allows the user to select from a list of options, such as a date or time picker.
+
+Sliders: a UI element that allows the user to adjust a value, such as volume or brightness, by sliding a control back and forth.
 
 ## Installation
 
