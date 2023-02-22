@@ -52,7 +52,7 @@ DynamicColor is a struct that provides a way to create colors that adjust to the
 
 ```swift
 public extension DesignSystem.DynamicColor {
-     let textPrimary: Self = .init(
+     static let textPrimary: Self = .init(
          light: .init(hex: "000000", alpha: 1.0),
          dark: .init(hex: "FFFFFF", alpha: 1.0)
      )
