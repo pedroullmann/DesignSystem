@@ -3,6 +3,7 @@
 ## Requirements
 iOS 14.0 or later
 
+## Features
 DesignSystem is a Swift library that provides several utilities to standardize and streamline the design process of your app. It includes the following features:
 
 ### DynamicColor
