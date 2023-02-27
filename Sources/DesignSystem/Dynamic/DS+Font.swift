@@ -1,11 +1,6 @@
 import UIKit
 
 public extension DesignSystem {
-
-    /// Register fonts
-    /// - Parameters:
-    ///   - withFilename: Font name.
-    ///   - fileExtension: Font extension, ex: ttf.
     struct Font {
         static func register(
             withFilename filename: String,

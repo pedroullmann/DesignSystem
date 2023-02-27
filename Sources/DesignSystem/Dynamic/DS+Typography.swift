@@ -6,10 +6,7 @@ public extension DesignSystem {
         public let size: CGFloat
 
         public struct Font {
-            /// Ex: Montserrat
             public let family: String
-
-            /// Ex: Regular
             public let style: String
 
             public var name: String {

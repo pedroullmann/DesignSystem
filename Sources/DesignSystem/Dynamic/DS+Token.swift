@@ -1,7 +1,7 @@
 import Foundation
 
 public extension DesignSystem {
-    struct TextToken {
+    struct TextTokens {
         public let typography: DesignSystem.Typography
         public let color: DesignSystem.DynamicColor
 

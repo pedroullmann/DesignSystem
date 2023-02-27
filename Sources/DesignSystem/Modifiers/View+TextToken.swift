@@ -1,15 +1,15 @@
 import SwiftUI
 
 public extension View {
-    func textToken(_ token: DesignSystem.TextToken) -> some View {
+    func textToken(_ token: DesignSystem.TextTokens) -> some View {
         modifier(TextTokensModifier(token: token))
     }
 }
 
 struct TextTokensModifier: ViewModifier {
-    private let token: DesignSystem.TextToken
+    private let token: DesignSystem.TextTokens
 
-    init(token: DesignSystem.TextToken) {
+    init(token: DesignSystem.TextTokens) {
         self.token = token
     }
 
