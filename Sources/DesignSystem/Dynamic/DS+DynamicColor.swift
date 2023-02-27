@@ -9,5 +9,13 @@ public extension DesignSystem {
         func dynamic(scheme: ColorScheme) -> Color {
             scheme == .dark ? dark: light
         }
+
+        public init(
+            light: Color,
+            dark: Color
+        ) {
+            self.light = light
+            self.dark = dark
+        }
     }
 }

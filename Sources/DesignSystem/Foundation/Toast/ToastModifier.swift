@@ -2,11 +2,15 @@ import SwiftUI
 
 public extension View {
     func toastView(
+        isPresented: Binding<Bool>,
+        model: Toast,
         position: ToastModifier.Position = .bottom,
         nanoseconds: UInt64 = 2_000_000_000 /// 2 seconds
     ) -> some View {
         modifier(
             ToastModifier(
+                isPresented: isPresented,
+                model: model,
                 position: position,
                 nanoseconds: nanoseconds
             )
@@ -15,15 +19,19 @@ public extension View {
 }
 
 public struct ToastModifier: ViewModifier {
-    @Environment(\.toast) var toast: Toast?
-    @State private var toastWasPresented = false
+    @Binding var isPresented: Bool
+    private let model: Toast
     private let position: Position
     private let nanoseconds: UInt64
 
     public init(
-        position: Position,
+        isPresented: Binding<Bool>,
+        model: Toast,
+        position: ToastModifier.Position,
         nanoseconds: UInt64
     ) {
+        self._isPresented = isPresented
+        self.model = model
         self.position = position
         self.nanoseconds = nanoseconds
     }
@@ -32,18 +40,15 @@ public struct ToastModifier: ViewModifier {
         ZStack(alignment: position.stackAlignment) {
             content
 
-            toast.map {
-                ToastView(model: $0)
+            if isPresented {
+                ToastView(model: model)
                     .transition(.move(edge: position.transitionEdge))
                     .animation(.easeInOut(duration: 0.5))
                     .onAppear {
                         Task {
                             try? await Task.sleep(nanoseconds: nanoseconds)
-                            toastWasPresented = true
+                            isPresented = false
                         }
-                    }
-                    .if(toastWasPresented) {
-                        $0.environment(\.toast, nil)
                     }
             }
         }
